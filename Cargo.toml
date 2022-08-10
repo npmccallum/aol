@@ -1,0 +1,16 @@
+[package]
+name = "aol"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0.143"
+serde_bytes = "0.11.7"
+ciborium = "0.2.0"
+p256 = { version = "0.11.1", features = ["ecdsa"] }
+ecdsa = { version = "0.14.3", features = ["der"] }
+rand = "0.8.5"
+sha2 = "0.10.2"
+human-size = "0.4.2"
